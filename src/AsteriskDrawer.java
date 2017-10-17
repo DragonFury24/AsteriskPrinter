@@ -14,7 +14,7 @@ public class AsteriskDrawer {
         System.out.println("Input the number of rows you want.");
     }
 
-    //draws lines with the same number of asterisks as the number of columns
+    //draws lines with the same number of asterisks as the number of columns.
     static void drawBox(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println();
@@ -24,7 +24,7 @@ public class AsteriskDrawer {
         }
     }
 
-    //draws LeftAlignedTriangle by drawing 1 asterisk then increasing by 1 for each row
+    //draws LeftAlignedTriangle by drawing 1 asterisk then increasing by 1 for each row.
     static void drawLeftAlignedTriangle(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println();
@@ -60,6 +60,30 @@ public class AsteriskDrawer {
     }
 
     static void drawBoxWithX(int numRows) {
+        System.out.println("This option is currently unavailable. Please choose a different option.");
+        if (true) {return;} //Method currently doesn't work
+        int numSpacesInMiddle = numRows - 4;
+        //Draws the first row. Prints same number of as number of rows.
+        for (int i = 0; i < numRows; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+        for (int i = 0; i < numRows - 2; i++) {
+            System.out.print("*"); //Prints the first asterisk in line
+            if ((numRows & 1) == 0) {
+                //Prints first space to align asterisks to form an X. Increases by 1 with each line.
+                int j = 0;
+                for (; j < (i <= numSpacesInMiddle / 2 ? i : -1); j++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+                System.out.print("*");
+                for (; j > 0; j--) {
 
+                }
+            }
+            for (int j = 0; ; )
+                System.out.println();
+        }
     }
 }
