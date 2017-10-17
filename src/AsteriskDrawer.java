@@ -13,6 +13,8 @@ public class AsteriskDrawer {
         System.out.println();
         System.out.println("Input the number of rows you want.");
     }
+
+    //draws lines with the same number of asterisks as the number of columns
     static void drawBox(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println();
