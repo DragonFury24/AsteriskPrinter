@@ -1,6 +1,6 @@
 public class AsteriskDrawer {
 
-    static void showOptions() {
+    static void displayOptions() {
         System.out.println("1) Box");
         System.out.println("2) Left-Aligned Triangle");
         System.out.println("3) Right-Aligned Triangle");
@@ -9,11 +9,11 @@ public class AsteriskDrawer {
         System.out.println("6) Exit");
     }
 
-    void askForNumRows() {
+    static void askForNumRows() {
         System.out.println();
         System.out.println("Input the number of rows you want.");
     }
-    void drawBox(int numRows) {
+    static void drawBox(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println();
             for (int j = 0; j < numRows; j++) {
@@ -22,7 +22,7 @@ public class AsteriskDrawer {
         }
     }
 
-    void drawLeftAlignedTriangle(int numRows) {
+    static void drawLeftAlignedTriangle(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println();
             for (int j = 0; j <= i; j++) {
@@ -31,7 +31,7 @@ public class AsteriskDrawer {
         }
     }
 
-    void drawRightAlignedTriangle(int numRows) {
+    static void drawRightAlignedTriangle(int numRows) {
         for (int i = numRows; i > 0; i--) {
             System.out.println();
             for (int j = numRows - i; j > 0; j--) {
@@ -43,11 +43,20 @@ public class AsteriskDrawer {
         }
     }
 
-    void drawCenterAlignedTriangle(int numRows) {
-
+    static void drawCenterAlignedTriangle(int numRows) {
+        int maxLength = numRows * 2 - 1;
+        for (int i = 1; i <= maxLength; i += 2) {
+            System.out.println();
+            for (int j = 0; j < (maxLength - i) / 2; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < i; k++) {
+                System.out.print("*");
+            }
+        }
     }
 
-    void drawBoxWithX(int numRows) {
+    static void drawBoxWithX(int numRows) {
 
     }
 }
