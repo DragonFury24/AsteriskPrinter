@@ -32,12 +32,12 @@ public class AsteriskDrawer {
     }
 
     void drawRightAlignedTriangle(int numRows) {
-        for (int i = numRows; i < 0; i--) {
+        for (int i = numRows; i > 0; i--) {
             System.out.println();
-            for (int j = 0; j >= i; j++) {
+            for (int j = numRows - i; j > 0; j--) {
                 System.out.print(" ");
             }
-            for (int k = 0; k < numRows - (numRows - i); k++) {
+            for (int k = 0; k < i; k++) {
                 System.out.print("*");
             }
         }
