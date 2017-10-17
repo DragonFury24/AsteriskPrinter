@@ -24,6 +24,7 @@ public class AsteriskDrawer {
         }
     }
 
+    //draws LeftAlignedTriangle by drawing 1 asterisk then increasing by 1 for each row
     static void drawLeftAlignedTriangle(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println();
