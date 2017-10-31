@@ -47,10 +47,10 @@ public class AsteriskDrawer {
     }
 
     static void drawCenterAlignedTriangle(int numRows) {
-        int maxLength = numRows * 2 - 1;
-        for (int i = 1; i <= maxLength; i += 2) {
+        int maxRowLength = numRows * 2 - 1;
+        for (int i = 1; i <= maxRowLength; i += 2) {
             System.out.println();
-            for (int j = 0; j < (maxLength - i) / 2; j++) {
+            for (int j = 0; j < (maxRowLength - i) / 2; j++) {
                 System.out.print(" ");
             }
             for (int k = 0; k < i; k++) {
