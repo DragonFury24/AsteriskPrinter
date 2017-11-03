@@ -61,6 +61,6 @@ public class AsteriskDrawer {
 
     static void drawBoxWithX(int numRows) {
         System.out.println("This option is currently unavailable. Please choose a different option.");
-        
+
     }
 }
