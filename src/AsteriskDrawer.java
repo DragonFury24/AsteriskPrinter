@@ -34,6 +34,7 @@ public class AsteriskDrawer {
         }
     }
 
+    //draws blank spaces and then draws the correct number of asterisks
     static void drawRightAlignedTriangle(int numRows) {
         for (int i = numRows; i > 0; i--) {
             System.out.println();
@@ -46,6 +47,7 @@ public class AsteriskDrawer {
         }
     }
 
+    //draws blank spaces and then draws the correct number of asterisks
     static void drawCenterAlignedTriangle(int numRows) {
         int maxRowLength = numRows * 2 - 1;
         for (int i = 1; i <= maxRowLength; i += 2) {
@@ -59,6 +61,7 @@ public class AsteriskDrawer {
         }
     }
 
+    //unfinished
     static void drawBoxWithX(int numRows) {
         for (int i = 0; i < numRows; i++) {
             System.out.println("*");

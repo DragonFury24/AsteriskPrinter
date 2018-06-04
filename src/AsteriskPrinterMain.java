@@ -10,26 +10,26 @@ public class AsteriskPrinterMain {
         while (true) {
             System.out.println("Please type in the number of the option you would like to choose.");
             AsteriskDrawer.displayOptions();
-            switch (keyType.nextInt()) {
+            switch (NumberInput.noNegIntInput(keyType)) {
                 case 1: //Box
                     AsteriskDrawer.askForNumRows();
-                    AsteriskDrawer.drawBox(keyType.nextInt());
+                    AsteriskDrawer.drawBox(NumberInput.noNegIntInput(keyType));
                     break;
                 case 2: //Left-aligned-triangle
                     AsteriskDrawer.askForNumRows();
-                    AsteriskDrawer.drawLeftAlignedTriangle(keyType.nextInt());
+                    AsteriskDrawer.drawLeftAlignedTriangle(NumberInput.noNegIntInput(keyType));
                     break;
                 case 3: //Right-center-triangle
                     AsteriskDrawer.askForNumRows();
-                    AsteriskDrawer.drawRightAlignedTriangle(keyType.nextInt());
+                    AsteriskDrawer.drawRightAlignedTriangle(NumberInput.noNegIntInput(keyType));
                     break;
                 case 4: //Center triangle
                     AsteriskDrawer.askForNumRows();
-                    AsteriskDrawer.drawCenterAlignedTriangle(keyType.nextInt());
+                    AsteriskDrawer.drawCenterAlignedTriangle(NumberInput.noNegIntInput(keyType));
                     break;
                 case 5: //Box with X
                     AsteriskDrawer.askForNumRows();
-                    AsteriskDrawer.drawBoxWithX(keyType.nextInt());
+                    AsteriskDrawer.drawBoxWithX(NumberInput.noNegIntInput(keyType));
                     break;
                 case 6: //Exit
                     return;
